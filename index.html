@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Trabajo Practico nro 3</title>
+​
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- our-own-styles -->
+		<link rel="stylesheet" href="css/styles.css">
+​
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<h1 class="text-center">Calculadora</h1>
+		<div class="container">
+			<div class="row fila text-center">
+				<div class="col-xs-12 columna">
+					<div id="expresion">0</div>
+				</div>
+			</div>
+			<div class="row fila text-center">
+				<div class="col-xs-12 columna">
+					<div id="resultado">0</div>
+				</div>
+			</div>
+			<div class="row fila text-center">
+				<div class="col-xs-3 columna">
+					<button type="button" id="btn(" onclick="openParentheses()">(</button>
+				</div>
+				<div class="col-xs-3 columna">
+					<button type="button" id="btn)" onclick="closeParentheses()">)</button>
+				</div>
+				<div class="col-xs-3 columna">
+					<button type="button" id="btn," onclick="showComa()">,</button>
+				</div>
+				<div class="col-xs-3 columna">
+					<button type="button" id="btn/" onclick="calcDiv()">/</button>
+				</div>
+			</div>
+			<div class="row fila text-center">
+				<div class="col-xs-3 columna">
+					<button type="button" id="btn7" onclick="showNumber(this.id)">7</button>
+				</div>
+				<div class="col-xs-3 columna">
+					<button type="button" id="btn8" onclick="showNumber(this.id)">8</button>
+				</div>
+				<div class="col-xs-3 columna">
+					<button type="button" id="btn9" onclick="showNumber(this.id)">9</button>
+				</div>
+				<div class="col-xs-3 columna">
+					<button type="button" id="btnX" onclick="calcMult()">X</button>
+				</div>
+			</div>
+			<div class="row fila text-center">
+				<div class="col-xs-3 columna">
+					<button type="button" id="btn4" onclick="showNumber(this.id)">4</button>
+				</div>
+				<div class="col-xs-3 columna">
+					<button type="button" id="btn5" onclick="showNumber(this.id)">5</button>
+				</div>
+				<div class="col-xs-3 columna">
+					<button type="button" id="btn6" onclick="showNumber(this.id)">6</button>
+				</div>
+				<div class="col-xs-3 columna">
+					<button type="button" id="btn-" onclick="calcSubs()">-</button>
+				</div>
+			</div>
+			<div class="row fila text-center">
+				<div class="col-xs-3 columna">
+					<button type="button" id="btn1" onclick="showNumber(this.id)">1</button>
+				</div>
+				<div class="col-xs-3 columna">
+					<button type="button" id="btn2" onclick="showNumber(this.id)">2</button>
+				</div>
+				<div class="col-xs-3 columna">
+					<button type="button" id="btn3" onclick="showNumber(this.id)">3</button>
+				</div>
+				<div class="col-xs-3 columna">
+					<button type="button" id="btn+" onclick="calcAdd()">+</button>
+				</div>
+			</div>
+			<div class="row fila text-center">
+				<div class="col-xs-3 columna">
+					<button type="button" id="btn0" onclick="showNumber(this.id)">0</button>
+				</div>
+				<div class="col-xs-3 columna">
+					<button type="button" id="btnC" onclick="clearResult()">C</button>
+				</div>
+				<div class="col-xs-3 columna">
+					<button type="button" id="btnCE" onclick="clearError()">CE</button>
+				</div>
+				<div class="col-xs-3 columna">
+					<button type="button" id="btn=" onclick="calcResult()">=</button>
+				</div>
+			</div>	
+		</div>
+		
+		<!-- librería-jQuery -->
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!-- Custom-Scripts -->
+		<script src="js/my-scripts.js"></script>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+/* CSS Document  */
+/* Project name: TP Bootstrap */
+/* File name: styles.css */
+/* Description: Hoja de estilos global */
+/* Creation date: Abril de 2016 */
+/* Author: Name Lastname */
+/* Author's eMail: username@server.com */
+/********** FONTS (Google-fonts) ********* */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+body {
+  font-family: "Montserrat";
+  margin: 0; }
+
+figure {
+  margin: 0;
+  line-height: 0; }
+
+a {
+  outline: none !important; }
+
+li {
+  text-decoration: none !important;
+  margin: 0;
+  font-family: "Montserrat"; }
+
+.container {
+  font-family: "Montserrat"; }
+
+/************************************ */
+/*=========     GLOBAL     ========= */
+/********************************** */
+body {
+  margin: 5px; }
+
+.container {
+  margin: auto;
+  border: 1px solid black; }
+
+#expresion {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: none; }
+
+#resultado {
+  border-top: none;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black; }
+
+#expresion, #resultado {
+  padding: 10px;
+  width: 100%;
+  min-height: 40px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  text-align: right;
+  background-color: gray;
+  color: red; }
+
+.fila button {
+  border: 1px solid black;
+  width: 100%;
+  min-height: 40px;
+  font-family: "Montserrat";
+  color: red;
+  outline: none; }
+  .fila button:focus, .fila button:hover {
+    border: green solid 5px; }
+
+.columna {
+  padding: 0; }
+
+/***************************************** */
+/*=========     MEDIA-QUERIES    ========= */
+/***************************************** */
+
+/*# sourceMappingURL=styles.css.map */
